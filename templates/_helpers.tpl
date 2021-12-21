@@ -64,8 +64,9 @@ Create the name of the service account to use
 {{/*
 Default configuration
 */}}
-{{- define "demo-merging-dynamic-configuration-in-helm.baseConfig" -}}
-myConfig1:
-  nonUpdatableParameter1: some-value
-nonUpdatableOption1: value1
+{{- define "demo-merging-dynamic-configuration-in-helm.baseConfig.myConfig1.nonUpdatableParameter1" -}}
+some-value
+{{- end }}
+{{- define "demo-merging-dynamic-configuration-in-helm.baseConfig.nonUpdatableOption1" -}}
+value1
 {{- end }}

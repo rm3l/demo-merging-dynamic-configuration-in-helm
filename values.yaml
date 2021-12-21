@@ -85,4 +85,7 @@ config:
   myConfig1:
     parameter11: value11
     parameter12: value12
-
+  myConfig2:
+    parameter21: value21
+  option1: value1
+  option2: value2
