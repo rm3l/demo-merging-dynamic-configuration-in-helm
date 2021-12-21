@@ -60,3 +60,12 @@ Create the name of the service account to use
 {{- default "default" .Values.serviceAccount.name }}
 {{- end }}
 {{- end }}
+
+{{/*
+Default configuration
+*/}}
+{{- define "demo-merging-dynamic-configuration-in-helm.baseConfig" -}}
+myConfig1:
+  nonUpdatableParameter1: some-value
+nonUpdatableOption1: value1
+{{- end }}
