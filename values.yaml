@@ -80,3 +80,9 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+config:
+  myConfig1:
+    parameter11: value11
+    parameter12: value12
+
